@@ -28,7 +28,7 @@ resource "aws_codepipeline" "reactCodePipeline" {
       output_artifacts = ["SourceArtifact"]
 
       configuration = {
-        OAuthToken = var.github_token
+        OAuthToken = ${{ secrets.GITHUB_TOKEN }}
         Owner = var.github_owner
         Repo = var.github_repo
         Branch = var.branch
