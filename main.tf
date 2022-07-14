@@ -8,10 +8,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  region  = "east-us-1"
-}
-
 
 resource "aws_s3_bucket" "mycodepipeline2" {
   bucket = "my-terraform-first-bucket2"
