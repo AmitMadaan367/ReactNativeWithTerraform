@@ -1,4 +1,4 @@
-#role for code pipeline
+#role for code pipelines
 
 resource "aws_iam_role" "codepipeline_role2" {
   name                 = "${var.app_name}-codepipeline-role"
