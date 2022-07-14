@@ -8,6 +8,12 @@ terraform {
   }
 }
 
+provider "aws" {
+  region              = "us-east-1"
+  allowed_account_ids = ["2284-3172-6353"]
+
+}
+
 
 resource "aws_s3_bucket" "mycodepipeline2" {
   bucket = "my-terraform-first-bucket2"
